@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<h2>Bem-vindo, @ViewData["UserName"]!</h2>
+
+<p>Este é o seu painel principal.</p>
+<p>Seu e-mail: @ViewData["UserEmail"]</p>
+
+@* Exemplo de link para Logout *@
+<form asp-controller="Account" asp-action="Logout" method="post">
+    <button type="submit" class="btn btn-danger">Sair</button>
+</form>
+
+@* Futuramente, você listará as senhas aqui ou terá links para outras funcionalidades *@
